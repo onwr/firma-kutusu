@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+      .marcellus {
+        font-family: "Marcellus", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="container mx-auto py-5 gap-5 grid grid-cols-5">
+      <div class="col-span-1">
+        <img src="/images/logo-yatay.png" />
+      </div>
+      <div
+        class="flex-1 marcellus col-span-3 flex items-center justify-center gap-10"
+      >
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/anasayfa.png" class="w-8" />
+          Anasayfa
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/firmaara.png" class="w-8" />
+          Firma Ara
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/sponsorluk.png" class="w-8" />
+          Sponsorluk
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/paketler.png" class="w-8" />
+          Paketler
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/hakkimizda.png" class="w-8" />
+          Hakkımızda
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/blog.png" class="w-8" />
+          Blog
+        </a>
+        <a href="" class="flex text-[#1C5540] items-center flex-col gap-0.5">
+          <img src="/images/icons/nav/destek.png" class="w-8" />
+          Destek
+        </a>
+      </div>
+      <div class="flex montserrat items-start col-span-1 gap-1.5 justify-end">
+        <img src="/images/icons/nav/bildirim.png" />
+        <div class="w-full flex gap-1 items-center">
+          <button
+            class="flex w-full font-medium justify-center text-sm text-[#1C5540] items-center gap-2 bg-[#F1EEE6] rounded-lg py-4 px-5"
+          >
+            <img src="/images/icons/nav/add.png" />
+            Üye Ol
+          </button>
+          <button
+            class="flex w-full font-medium justify-center text-sm text-[#F1EEE6] items-center gap-2 bg-[#1C5540] rounded-lg py-4 px-5"
+          >
+            <img src="/images/icons/nav/power.png" />
+            Giriş
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--HERO-->
+    <div class="container relative mt-10 mx-auto">
+      <img src="/images/hero.svg" class="w-full" />
+
+      <div class="absolute flex flex-col justify-center items-center inset-0">
+        <div class="container mx-auto max-w-7xl">
+          <p class="marcellus text-white text-3xl">Türkiye'nin Firma Rehberi</p>
+          <p class="marcellus text-white text-3xl">
+            Firma Kutusu ile aradığınız firmaya hızlı ve kolay ulaşın.
+          </p>
+
+          <div class="mt-8 montserrat">
+            <p class="text-xs text-white">
+              Sektör veya konum bilgisi girerek ya da firma unvanı, vergi
+              numarası veya NACE kodu ile detaylı arama yapabilirsiniz.
+            </p>
+            <div class="flex mt-1 gap-3">
+              <div class="flex-1">
+                <div class="flex gap-2">
+                  <div
+                    class="flex-1 px-5 flex items-center justify-between py-2 rounded-l-lg bg-white"
+                  >
+                    <div class="flex flex-col gap-0.5">
+                      <p class="text-[#1C5540] text-xs">Sektör</p>
+                      <p class="font-medium text-[#1C5540]">İnşaat & Tadilat</p>
+                    </div>
+                    <img
+                      id="selectArrow"
+                      src="/images/icons/arrow-down.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex-1 px-5 flex items-center justify-between py-2 bg-white"
+                  >
+                    <div class="flex flex-col gap-0.5">
+                      <p class="text-[#1C5540] text-xs">İl</p>
+                      <p class="font-medium text-[#1C5540]">Kahramanmaraş</p>
+                    </div>
+                    <img
+                      id="selectArrow"
+                      src="/images/icons/arrow-down.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex-1 px-5 flex items-center rounded-r-lg justify-between py-2 bg-white"
+                  >
+                    <div class="flex flex-col gap-0.5">
+                      <p class="text-[#1C5540] text-xs">İlçe</p>
+                      <p class="font-medium text-[#1C5540]">Merkez</p>
+                    </div>
+                    <img
+                      id="selectArrow"
+                      src="/images/icons/arrow-down.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex-1 mt-2 px-5 flex items-center rounded-lg rounded-r-lg justify-between py-2 bg-white"
+                >
+                  <div class="flex w-full flex-col gap-0.5">
+                    <p class="text-[#1C5540] text-xs">Anahtar Kelime</p>
+                    <input
+                      type="text"
+                      placeholder="Firma Unvanı veya Firma Vergi No veya NACE Kodu "
+                      class="font-medium placeholder-[#1C5540] w-full text-[#1C5540]"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 rounded-xl text-white font-extrabold bg-[#008060] hover:bg-[#008060]/40 duration-300 cursor-pointer px-5 justify-center items-center"
+              >
+                <img src="/images/icons/search.svg" />
+                <p class="text-center">
+                  Sonuçları <br />
+                  Göster
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
